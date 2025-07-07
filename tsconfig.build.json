@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"],
+  "include": ["src/**/*.ts", "src/**/*.yaml"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@scripts/*": ["scripts/*"],
+      "@api/*": ["src/api/*"],
+      "@batch/*": ["src/batch/*"],
+      "@config/*": ["src/config/*"],
+      "@constants/*": ["src/constants/*"],
+      "@features/*": ["src/features/*"],
+      "@queues/*": ["src/queues/*"],
+      "@models/*": ["src/models/*"],
+      "@libs/*": ["src/libs/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  }
+}

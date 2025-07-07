@@ -1,0 +1,14 @@
+db:
+  name: nestjs-api-example.sqlite3
+redis:
+  host: localhost
+  prot: 6379
+public-api:
+  nts-biz-reg-status:
+    cron-schedule: '*/5 0-7 * * *'
+    base-url: https://api.odcloud.kr/api/nts-businessman/v1
+    api-key: cipher::jzinQD8n1AevlOZpUPcN+g47+fouuD1Os72RsgYkmBT16+loOQeNY6UgRGo3+gsClMzHKhUA6nwFBKeZ9Eoet9ObYpUuI6hSTqbKcoihmsNJYPfxG2cpoSVqHw/6FEqVym7lI/3aAEBldK+62bgCkwxQAXzy5WeMtI2SZYBtWT8=
+    interval-days: 7
+    batch-size: 100
+    retry:
+      max-attempts: 3
